@@ -35,16 +35,14 @@ x = 1
 endOn = int(input('End On (any number): '))
 
 #for loop and if statment
-for x in range(x, endOn):
+for x in range(x, endOn +1):
     if x % 3 == 0 and x % 5 == 0:
         print('fizzbuzz')
-        continue
     elif x % 3 == 0:
         print("fizz")
-        continue
     elif x % 5 == 0:
         print("buzz")
-        continue
-    print(x)
+    else:
+        print(x)
 
-
+#had continue after each statement replaced with else to end.
